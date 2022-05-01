@@ -14,13 +14,13 @@ Git é um sistema de controle de versão e o GitHub é uma das plataformas para 
 
 ## Comandos básicos
 
-|Comandos          |Windows  |Linux
-|:-----------------|:-------:|:---:
-|Mudar de diretório|cd       |cd
-|Listar diretórios |dir      |ls
-|Criar diterórios  |mkdir    |mkdir
-|Deletar diretórios|del/rmdir|rm/rf
-|Move um diretório |mv       |mv
+|Comandos          |Windows  |Linux|
+|:-----------------|:-------:|:---:|
+|Mudar de diretório|cd       |cd   |
+|Listar diretórios |dir      |ls   |
+|Criar diterórios  |mkdir    |mkdir|
+|Deletar diretórios|del/rmdir|rm/rf|
+|Move um diretório |mv       |mv   |
 
 ## Instalando Git
 
@@ -60,7 +60,7 @@ Forma de estabelecer uma conexão segura e encriptada entre duas máquinas.
 - Chave pública (enviada ao GitHub)
 - Chave privada (usada para desencriptar)
 
-Gerar uma nova chave SSH e adicioná-la ao ssh-agent:[Documentação SSH GitHub](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+Gerar uma nova chave SSH e adicioná-la ao ssh-agent: [Documentação SSH GitHub](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 Passo a passo:
 1. Gerar par de chave publica e privada: `ssh-keygen -t ed25519 -C seu_email_github@gmail.com`
@@ -89,14 +89,14 @@ Gerar um token
 
 ## Iniciando o Git e criando um commit
 
-|Função                                     |Comando
-|:------------------------------------------|:------------
-|Inicia um repositório Git                  |git init
-|Insere uma configuração                    |git config
-|Adiciona o conteúdo dos arquivos informados|git add
-|Cria um commit                             |git commit
-|Verifica o status dos arquivos             |git status
-|Lista os repositórios remotos cadastrados  |git remote -v
+|Função                                     |Comando      |
+|:------------------------------------------|:------------|
+|Inicia um repositório Git                  |git init     |
+|Insere uma configuração                    |git config   |
+|Adiciona o conteúdo dos arquivos informados|git add      |
+|Cria um commit                             |git commit   |
+|Verifica o status dos arquivos             |git status   |
+|Lista os repositórios remotos cadastrados  |git remote -v|
 
 > Em `git add *` e `git add .` o asterisco ou ponto adiciona todos os arquivos do diretório (incluindo os que foram excluídos).
 > Em `git commit -m "mensagem"` -m é uma flag que permite passar uma mensagem.
